@@ -1,0 +1,205 @@
+.root{
+    background-color: rgb(19, 19, 19);
+    background:rgb(19, 19, 19);
+}
+
+#navBar {
+    width: 100vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgb(19, 19, 19);
+    font-family: monospace;
+    font-size: clamp(1.1rem, 25vmin, 1rem);
+  }
+
+li{
+    float: left;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+/* Link hover effect sourced from: 'Geoff Graham, CSS-tricks'*/
+li a{
+    --redColor: rgba(255, 0, 0, 1);
+    --pinkColor: rgba(255, 0, 180, 1);
+    --blueColor: rgba(0, 100, 200, 1);
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background:
+        linear-gradient(
+            to right,
+            var(--redColor),
+            var(--pinkColor),
+            var(--blueColor)
+        );
+        background-position: 0 125%;
+        background-repeat: repeat-x;
+        background-size: 100% 5px, 0 3px;
+        color:white;
+        transition: background-size .2s;
+        padding: 0px;
+}
+
+li a:hover{
+    background-size: 100px 20px;
+}
+  
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#FirstDiv{
+    color: white;
+    background-color: rgb(19, 19, 19);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1{
+    font-size:  clamp(3rem, 25vmin, 10rem);
+    font-family: monospace;
+    padding-left: 50px;
+    padding-bottom: 0px;
+    padding-top: 250px;
+    margin: 0;
+}
+
+u{
+    text-decoration: none;
+    background:
+    linear-gradient(
+      to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 5px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+}
+
+/* Gradient Text animation code sourced from: 'Jhey Tompkins' */
+#introText{
+    --size: 400%;
+    background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1)
+    ) 0 0 / var(--size) 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* animation options: reverse, alternate, linear*/
+    animation: introframe 15s infinite reverse;
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+@keyframes introframe {
+    to{
+        background-position: var(--size) 0;
+    }
+}
+
+p{
+    font-family: monospace;
+}
+
+.InfoBox{
+    float: inline-end;
+    color: white;
+    background:
+    linear-gradient(
+      to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1)
+    );
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.rounded{
+    border-radius: 2.4vh;
+    background-color: rgb(19, 19, 19);
+    width: 51vw;
+    height: 26vh;
+    position: absolute;
+    top: 120%;
+    left: 8%;
+    margin: -4vh 0 0 -8vh;
+    text-align: justify;
+    font-family: monospace;
+    float:left;
+    color: white;
+    font-size: clamp(1.1rem, 25vmin, 1rem);
+    padding-left: clamp(3rem, 25vmin, 2rem);
+    padding-top: clamp(1rem, 25vmin, 2rem);
+    padding-right:clamp(3rem, 25vmin, 2rem);
+    padding-bottom: clamp(1rem, 25vmin, 2rem);
+    line-height: 4.8vh;
+    text-size-adjust: auto;
+}
+
+#HospitalBed{
+    position: absolute;
+    top: 110%;
+    left: 69%;
+    width: 27%;
+    height: 38%;
+    float: right;
+    margin-top: 4vh;
+    margin-right: 8.8vh;
+    padding-top: 1.6vh;
+    border-radius: 2.4vh;
+}
+
+#SecondSection{
+   background: rgb(19, 19, 19);
+}
+
+.rounded2{
+    border-radius: 2.4vh;
+    background:
+    linear-gradient(
+      to right,
+    rgba(0, 100, 200, .8),
+    rgba(255, 0, 180, .8),
+    rgba(255, 0, 0, .8)
+    );
+    width: 51vw;
+    height: 32vh;
+    position: absolute;
+    top: 175%;
+    left: 44%;
+    margin: -8vh 0 0 -8vh;
+    text-align:justify;
+    font-size: 140%;
+    padding: 2%;
+}
+
+h2{
+    font-family: monospace;
+    font-size: 700%;
+    position: absolute;
+    top: 177%;
+    left: 10%;
+    margin: -8vh 0 0 -8vh;
+}
+
+.container{
+    width: 100vw;
+}
