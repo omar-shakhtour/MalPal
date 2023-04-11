@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MalPal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js"></script>
+
 </head>
     <ul id="navBar">
         <li><a href="index.html">Home</a></li>
@@ -16,7 +19,6 @@
     <h1><u>MalPal.</u></h1>
     <p id="introText">Revolutionizing malnutrition detection using AI.</p>
 </div>
-<div class="container">
 <div class="InfoBox">
         <div class="rounded">
             <p class="InfoText">
@@ -25,10 +27,11 @@
                 using it's comphrensive database of nutritional foods.
             </p>
         </div>
+    <div id="AppleContainer">
+        <img id="MalApple" src="/MalPalApple.png">
     </div>
-    <img id="HospitalBed" src="HospitalBed.jpg">
-</div>
-<div id="SecondSection" class="InfoBox">
+    </div>
+<div id="SecondSection" class="InfoBox2">
     <h2>How it<br> works.</h2>
         <div class="rounded2">
             <p>MalPal uses a 275 megapixel camera installed in hospitals to take a snapshot of a patient's food
@@ -38,6 +41,22 @@
                 healthcare professionals about potential malnutrition.
             </p>
         </div>
+</div>
+<div id="demo">
+    <h3>MalPal in action.</h3>
+    <p id="testOutMal">Test out the MalPal system with our interactive demo below:</p>
+    <div class="container">
+    <div id="testBox">
+        <button id="start" onclick="activate()">Activate</button>
+        <div id="loading">
+            <div class="lds-dual-ring"></div>
+        </div>
+            <div id="foodButtonDiv">
+                <i class="fa-solid fa-apple-whole fa-8x" onclick="apple()"></i>
+                <button onclick="apple()" id="appleButton">Select Red Apple</button>
+        </div>
+    </div>
+    </div>
 </div>
 </body>
 </html>
