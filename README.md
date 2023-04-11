@@ -6,5 +6,7 @@ MalPal is a AI malnutrition detection system. The product is currently a theoret
 at it on the MalPal website:
 https://omar-shakhtour.github.io/MalPal/
 
-# About
-The MalPal website was built using HTML, CSS, and JavaScript.
+## Built With
+* HTML
+* CSS
+* JavaScript
