@@ -24,8 +24,7 @@ li{
 /* Link hover effect sourced from: 'Geoff Graham, CSS-tricks'*/
 li a{
     --redColor: rgba(255, 0, 0, 1);
-    --pinkColor: rgba(255, 0, 180, 1);
-    --blueColor: rgba(0, 100, 200, 1);
+    --pinkColor: rgba(0, 100, 200, 1);
     display: block;
     color: white;
     text-align: center;
@@ -34,8 +33,7 @@ li a{
         linear-gradient(
             to right,
             var(--redColor),
-            var(--pinkColor),
-            var(--blueColor)
+            var(--pinkColor)
         );
         background-position: 0 125%;
         background-repeat: repeat-x;
@@ -53,6 +51,8 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #FirstDiv{
@@ -117,7 +117,26 @@ p{
 }
 
 .InfoBox{
-    float: inline-end;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background:
+    linear-gradient(
+      to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1)
+    );
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.InfoBox2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     color: white;
     background:
     linear-gradient(
@@ -137,13 +156,9 @@ p{
     background-color: rgb(19, 19, 19);
     width: 51vw;
     height: 26vh;
-    position: absolute;
-    top: 120%;
-    left: 8%;
-    margin: -4vh 0 0 -8vh;
+    margin: 6vh 0 0 5vh;
     text-align: justify;
     font-family: monospace;
-    float:left;
     color: white;
     font-size: clamp(1.1rem, 25vmin, 1rem);
     padding-left: clamp(3rem, 25vmin, 2rem);
@@ -154,17 +169,14 @@ p{
     text-size-adjust: auto;
 }
 
-#HospitalBed{
-    position: absolute;
-    top: 110%;
-    left: 69%;
-    width: 27%;
-    height: 38%;
-    float: right;
-    margin-top: 4vh;
-    margin-right: 8.8vh;
-    padding-top: 1.6vh;
+#MalApple{
+    display: flex;
+    width: 350px;
+    height: 220px;
     border-radius: 2.4vh;
+    margin-left: 100px;
+    margin-right: 20px;
+    margin-top: 40px;
 }
 
 #SecondSection{
@@ -182,24 +194,369 @@ p{
     );
     width: 51vw;
     height: 32vh;
-    position: absolute;
-    top: 175%;
-    left: 44%;
-    margin: -8vh 0 0 -8vh;
-    text-align:justify;
-    font-size: 140%;
-    padding: 2%;
+    text-align: justify;
+    font-size: 50px;
+    font-size: clamp(1.1rem, 25vmin, 1rem);
+    padding-left: clamp(3rem, 25vmin, 2rem);
+    padding-top: 10px;
+    padding-right:clamp(3rem, 25vmin, 2rem);
+    padding-bottom: 20px;
+    line-height: 4.8vh;
+    text-size-adjust: auto;
+    margin-left: 170px;
+    margin-top: 40px;
+}
+
+.rounded2 p{
+    font-size: 2.3vh;
 }
 
 h2{
     font-family: monospace;
     font-size: 700%;
-    position: absolute;
-    top: 177%;
-    left: 10%;
-    margin: -8vh 0 0 -8vh;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+#demo{
+    background-color: rgb(194, 0, 103);
+    color: rgb(255, 255, 255);
+    font-family: 'Outfit', sans-serif;
+    height: 900px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 500%;
+    padding-top: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#testOutMal{
+    display: flex;
+    justify-content: center;
+    font-family: 'Outfit';
+    font-size: 170%;
+
 }
 
 .container{
-    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
+
+#testBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    width: 1100px;
+    height: 600px;
+}
+
+#start{
+    height: 70px;
+    width: 500px;
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-size: 30px;
+    font-family: 'Outfit';
+    display: block;
+}
+
+#start:hover{
+    border-color:rgb(255, 0, 76);
+    color: rgba(255, 0, 76);
+}
+
+#foodButtonDiv{
+    display: none;
+}
+
+#appleButton{
+    margin-top: 20px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 310%;
+    left: 50%;
+    height: 70px;
+    width: 500px;
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-size: 30px;
+    font-family: 'Outfit';
+}
+
+#appleButton:hover{
+    border-color: red;
+    color: red;
+    background-color: rgb(14, 13, 13);
+}
+
+.fa-solid{
+    padding: 90px;
+}
+
+/** 
+loading animation code source: https://loading.io/css/ 
+**/
+#loading{
+    display: none;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media screen and (max-width: 1125px) {
+    #testBox{
+        width: 800px;
+        height: 600px;
+    }
+    #introText{
+        margin-right: 40px;
+    }
+    .InfoBox{
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .rounded{
+        width: 600px;
+        margin: 6vh 8vh 0 5vh;
+    }
+
+    #AppleContainer{
+        display: flex;
+        justify-content: center;
+        margin: 6vh 20vh 5vh 5vh;
+        float:inline-start;
+    }
+
+    #MalApple{
+     height: 400px;
+     width: 650px;
+    }
+
+    .InfoBox2{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h2{
+        margin-bottom: 0;
+    }
+
+    div br {
+        display: none;
+    }
+
+    .rounded2{
+        width: 600px;
+        margin: 6vh 8vh 7vh 5vh;
+    }
+  }
+
+  @media screen and (max-width: 819px) {
+    h1{
+        font-size: 80px;
+    }
+    #testBox{
+        width: 600px;
+        height: 400px;
+    }
+    #introText{
+        margin-right: 40px;
+    }
+    h3{
+        font-size: 50px;
+    }
+
+    #testOutMal{
+        font-size: 20px;
+    }
+
+    .InfoBox{
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .rounded{
+        width: 400px;
+        font-size: 12px;
+        margin: 6vh 8vh 0 8vh;
+    }
+
+    #AppleContainer{
+        display: flex;
+        justify-content: center;
+        margin: 0vh 20vh 5vh 5vh;
+        float:inline-start;
+    }
+
+    #MalApple{
+     height: 250px;
+     width: 400px;
+    }
+
+    .InfoBox2{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h2{
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+
+    div br {
+        display: none;
+    }
+
+    .rounded2{
+        width: 400px;
+        margin: 6vh 8vh 7vh 8vh;
+    }
+
+    .rounded2 p{
+        font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 595px) {
+    #navBar{
+        font-size: 12px;
+    }
+    #testBox{
+        width: 300px;
+        height: 200px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    #introText{
+        font-size: 20px;
+        margin-right: 40px;
+    }
+    h3{
+        font-size: 50px;
+    }
+
+    #testOutMal{
+        font-size: 20px;
+    }
+
+    .InfoBox{
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .rounded{
+        width: 200px;
+        height: 400px;
+        font-size: 15px;
+        margin: 6vh 8vh 0 8vh;
+    }
+
+    #AppleContainer{
+        display: flex;
+        justify-content: center;
+        margin: 0vh 20vh 5vh 10vh;
+        float:inline-start;
+    }
+
+    #MalApple{
+     height: 170px;
+     width: 250px;
+    }
+
+    .InfoBox2{
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h2{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    div br {
+        display: none;
+    }
+
+    .rounded2{
+        width: 200px;
+        height: 550px;
+        margin: 6vh 8vh 7vh 8vh;
+    }
+
+    .rounded2 p{
+        font-size: 12.5px;
+    }
+    #demo h3{
+        font-size: 25px;
+    }
+
+    #demo p{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    #demo{
+        height: 400px;
+    }
+
+    #start, #appleButton{
+        width: 200px;
+        font-size: 15px;
+    }
+
+    #appleButton{
+        display: none;
+    }
+  }
