@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MalPal About Page</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+    <ul id="navBar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+<body>
+<div id="FirstDiv">
+    <h1 id="About"><u>Contact Us</u></h1>
+    <p id="introText">Reach out to the MalPal team.</p>
+</div>
+<div class="InfoBox">
+    <div class="container">
+    <form>
+        <p id="details">Enter your contact details below and we'll reach out shortly!</p>
+        <label for="first">First Name</label>
+        <input type="text" name="firstname" placeholder="First Name">
+    
+        <label for="last">Last Name</label>
+        <input type="text" name="lastname" placeholder="Last Name">
+    
+        <label for="inquiry">Inquiry</label>
+        <select id="inquiry" name="inquiry">
+          <option value="blank"></option>
+          <option value="technical">Technical Issues</option>
+          <option value="pricing">Pricing & Billing</option>
+          <option value="general">General Questions</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Dear MalPal team..."></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+      </div>
+</div>
