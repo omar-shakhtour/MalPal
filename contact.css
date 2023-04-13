@@ -187,6 +187,9 @@ input[type=text], select, textarea {
     input[type=text], select, textarea {
       width: 600px;
   }
+  #About{
+    justify-content: left;
+  }
   }
 
   @media screen and (max-width: 660px) {

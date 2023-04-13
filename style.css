@@ -463,19 +463,9 @@ loading animation code source: https://loading.io/css/
   }
   
   @media screen and (max-width: 595px) {
-    #navBar{
-        font-size: 12px;
-    }
     #testBox{
         width: 300px;
         height: 200px;
-    }
-    h1{
-        font-size: 50px;
-    }
-    #introText{
-        font-size: 20px;
-        margin-right: 40px;
     }
     h3{
         font-size: 50px;

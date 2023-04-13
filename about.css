@@ -288,6 +288,9 @@ h2{
   .InfoBox{
     height: 1500px;
 }
+  #About{
+    justify-content: left;
+  }
   #SecondSection{
     display: flex;
     flex-direction: column;
@@ -325,22 +328,26 @@ h2{
     margin-right: 20px;
   }
   #About{
-    font-size: 70px;
+    margin-right: 30px;
+    justify-content: left;
+    font-size: 60px;
   }
   #introText{
-    font-size: 30px;
+    margin-right: 30px;
+    justify-content: left;
+    font-size: 40px;
   }
 }
 
 @media screen and (max-width: 415px) {
   #About{
-    font-size: 50px;
-    display: flex;
-    justify-content: left;
     margin-right: 30px;
-    text-align: center;
+    justify-content: left;
+    font-size: 60px;
   }
   #introText{
-    font-size: 30px;
+    margin-right: 30px;
+    justify-content: left;
+    font-size: 40px;
   }
 }
